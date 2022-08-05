@@ -19,8 +19,8 @@ class CashbackHackServiceTest {
     @Test
     void schould1000IfAmountIs0() {
         CashbackHackService service = new CashbackHackService();
-        int amount = 0;
-        int expected = 1000;
+        int amount = 1000;
+        int expected = 0;
 
         int actual = service.remain(amount);
         assertEquals(expected, actual);
